@@ -1,2 +1,0 @@
-# XBot
-Telegram UserBot

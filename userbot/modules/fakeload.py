@@ -6,7 +6,7 @@ from time import sleep
 from userbot import CMD_HELP, ZALG_LIST
 from userbot.events import register
 
-@register(outgoing=True, pattern='^\.fl(?: |$)(.*)')
+@register(outgoing=True, pattern='^\.kill(?: |$)(.*)')
 async def typewriter(typew):
 	message = typew.pattern_match.group(1)
 	await typew.edit("`Mau Gue Santet Lu Broo?..`")
@@ -322,6 +322,6 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     'fakeload':
-    '.fl\
+    '.kill\
         \nUsage: Gagal Santet.'
 })

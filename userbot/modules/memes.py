@@ -1495,6 +1495,7 @@ async def koc(e):
         await e.edit("8===✊D")
         await e.edit("8===✊D💦")
         await e.edit("8====D💦💦")
+        await e.edit("crooottssssssss")
         await e.edit(choice(FACEREACTS))
 
 

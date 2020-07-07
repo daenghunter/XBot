@@ -19,13 +19,13 @@ async def help(event):
         else:
             await event.edit("`Modul Salah Goblokk wkwkkw`")
     else:
-        head = "**Help for** [XBot](https://github.com/xvenom15/XBot)"
+        head = "**Help for** [XBot](https://github.com/xvenom15/XBot)\nCommand"
         head2 = "Sertakan Module untuk melihat lengkap Command"
         head3 = "Contoh: .help <nama module>"
         head4 = "Daftar Command Module Yang Aktif: "
         string = ""
-        sep1 = "××××××××××××××××××××××××××××××××××××××××××"
-        sep2 = "======================================"
+        sep1 = "×××××××××××××××××××××××××××××××××××××"
+        sep2 = "==================================="
         for i in CMD_HELP:
             string += "`" + str(i)
             string += "`  •  "

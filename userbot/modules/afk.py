@@ -48,7 +48,7 @@ async def set_afk(afk_e):
         AFKREASON = string
         await afk_e.edit(f"`{string}`")
     else:
-        await afk_e.edit("`Gw Pergi Dulu Cokk..`")
+        await afk_e.edit("`#AFK\nGw Pergi Dulu Cokk..`")
     if BOTLOG:
         await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nSorry, Gw Sekarang Lagi **OFFLINE**!")
     ISAFK = True

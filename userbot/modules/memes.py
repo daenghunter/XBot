@@ -749,6 +749,24 @@ HIT_Jutsu = [
     "Chidori",
 ]
 
+GAMBAR_TITIT = """
+😘😘
+😘😘😘
+  😘😘😘
+    😘😘😘
+     😘😘😘
+       😘😘😘
+        😘😘😘
+         😘😘😘
+          😘😘😘
+          😘😘😘
+      😘😘😘😘
+ 😘😘😘😘😘😘
+ 😘😘😘  😘😘😘
+    😘😘       😘😘
+"""
+
+
 
 WHERE_Jutsu = ["Di Pipi", "Di Kepala", "Di Bokong", "Di Badan ,Di Pantat"]
 
@@ -1130,9 +1148,46 @@ async def moon(event):
         return
 
 
+
 @register(outgoing=True, pattern="^\.clock$")
 async def clock(event):
     deq = deque(list("🕙🕘🕗🕖🕕🕔🕓🕒🕑🕐🕛"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
+
+
+@register(outgoing=True, pattern="^.rain$")
+async def rain(event):
+    deq = deque(list("☀️🌤⛅️🌥☁️🌧⛈"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
+
+                      
+@register(outgoing=True, pattern="^.love$")
+async def love(event):
+    deq = deque(list("❤️🧡💛💚💙💜🖤💕💞💓💗💖💘💝"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
+
+
+@register(outgoing=True, pattern="^.earth$")
+async def earth(event):
+    deq = deque(list("🌏🌍🌎🌎🌍🌏🌍🌎"))
     try:
         for x in range(32):
             await sleep(0.1)
@@ -1504,6 +1559,16 @@ async def shrugger(shg):
     r""" ¯\_(ツ)_/¯ """
     await shg.edit(choice(SHGS))
 
+
+@register(outgoing=True, pattern=r"^\.(?:penis|dick)\s?(.)?")
+async def emoji_penis(e):
+    emoji = e.pattern_match.group(1)
+    titid = GAMBAR_TITIT
+    if emoji:
+        titid = titid.replace('🤡', emoji)
+    await e.edit(titid)
+
+
 CMD_HELP.update({
     "memes":
     ">`.cowsay`"
@@ -1572,6 +1637,6 @@ CMD_HELP.update({
     "\n\nAnd many more"
     "`\n>.nou ; .bot ; .gey ; .gey ; .tf ; .paw ; .taco ; .nih ;`"
     "`\n>.fag ; .gtfo ; .stfu ; .lol ; .lool ; .fail ; .leave`"
-    "`\n>.iwi ; .sayhi` ; .koc`"
+    "`\n>.iwi ; .sayhi` ; .koc` ; .earth` ; .love` ; .rain` ; .penis`"
     "\n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
 })

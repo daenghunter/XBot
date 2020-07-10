@@ -1627,14 +1627,6 @@ async def image_maker(event):
         force_document=False,
         silent=True,
     )
-    await event.delete()
-
-
-CMD_HELP.update(
-    {
-        "id": ">`.
-    }
-)
 
 
 CMD_HELP.update({

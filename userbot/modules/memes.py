@@ -1566,6 +1566,22 @@ async def koc(e):
         await e.edit(choice(FACEREACTS))
 
 
+@register(outgoing=True, pattern="^.gas$")  
+async def gas(e):
+   if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("______________________")
+        await e.edit("___________________🚑")
+        await e.edit("________________🚑___")
+        await e.edit("______________🚑_____")
+        await e.edit("___________🚑________")
+        await e.edit("________🚑___________")
+        await e.edit("_____🚑______________")
+        await e.edit("__🚑_________________")
+        await e.edit("🚑___________________")
+        await e.edit("______________________")
+        await e.edit(choice(FACEREACTS))
+
+
 @register(outgoing=True, pattern="^\.shg$")
 async def shrugger(shg):
     r""" ¯\_(ツ)_/¯ """
@@ -1649,6 +1665,6 @@ CMD_HELP.update({
     "\n\nAnd many more"
     "`\n>.nou ; .bot ; .gey ; .gey ; .tf ; .paw ; .taco ; .nih ;`"
     "`\n>.fag ; .gtfo ; .stfu ; .lol ; .lool ; .fail ; .leave`"
-    "`\n>.iwi ; .sayhi` ; .koc` ; .earth` ; .love` ; .rain` ; .penis` ; .emo`"
+    "`\n>.iwi ; .sayhi` ; .koc` ; .gas` ; .earth` ; .love` ; .rain` ; .penis` ; .emo`"
     "\n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
 })

@@ -1197,6 +1197,18 @@ async def earth(event):
         return
 
 
+@register(outgoing=True, pattern="^.emo$")
+async def earth(event):
+    deq = deque(list("🙂😁😄😃😂🤣😭"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
+
+
 @register(outgoing=True, pattern="^\.mock(?: |$)(.*)")
 async def spongemocktext(mock):
     """ Do it and find the real fun. """
@@ -1637,6 +1649,6 @@ CMD_HELP.update({
     "\n\nAnd many more"
     "`\n>.nou ; .bot ; .gey ; .gey ; .tf ; .paw ; .taco ; .nih ;`"
     "`\n>.fag ; .gtfo ; .stfu ; .lol ; .lool ; .fail ; .leave`"
-    "`\n>.iwi ; .sayhi` ; .koc` ; .earth` ; .love` ; .rain` ; .penis`"
+    "`\n>.iwi ; .sayhi` ; .koc` ; .earth` ; .love` ; .rain` ; .penis` ; .emo`"
     "\n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
 })

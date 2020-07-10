@@ -8,7 +8,6 @@ from urllib.parse import quote as urlencode
 
 import aiohttp
 import bs4
-import jikanpy
 import pendulum
 import requests
 import wget

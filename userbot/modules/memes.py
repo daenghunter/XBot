@@ -1135,6 +1135,10 @@ async def Oem(e):
 async def iqless(e):
     await e.edit("♿")
 
+@register(outgoing=True, pattern="^.fuck$")
+async def iqless(e):
+    await e.edit("🖕🖕🖕🖕🖕🖕🖕🖕\n🖕🖕🖕🖕🖕🖕🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕🖕🖕🖕🖕\n🖕🖕🖕🖕🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕\n🖕🖕")  
+
 
 @register(outgoing=True, pattern="^\.moon$")
 async def moon(event):
@@ -1199,7 +1203,7 @@ async def earth(event):
 
 @register(outgoing=True, pattern="^.emo$")
 async def earth(event):
-    deq = deque(list("🙂😁😄😃😂🤣😭"))
+    deq = deque(list("🙂😁😄😃😂🤣😭🐵🙊🙉🙈"))
     try:
         for x in range(32):
             await sleep(0.1)
@@ -1662,8 +1666,8 @@ CMD_HELP.update({
     "\n[Available Actions: (typing, contact, game, location, voice, round, video, photo, document, cancel)]"
     "\nUsage: Create fake chat actions, for fun. (Default action: typing)"
     "\n\nAnd many more"
-    "`\n>.nou ; .bot ; .gey ; .gey ; .tf ; .paw ; .taco ; .nih ;`"
+    "`\n>.nou ; .bot ; .gey ; .tf ; .paw ; .taco ; .nih ;`"
     "`\n>.fag ; .gtfo ; .stfu ; .lol ; .lool ; .fail ; .leave`"
-    "`\n>.iwi ; .sayhi` ; .koc` ; .gas` ; .earth` ; .love` ; .rain` ; .penis` ; .emo`"
+    "`\n>.iwi ; .sayhi` ; .koc` ; .gas` ; .earth` ; .love` ; .rain` ; .penis` ; .emo` ; .fuck`"
     "\n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
 })

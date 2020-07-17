@@ -9,16 +9,19 @@ from userbot.events import register
 @register(outgoing=True, pattern='^\.kill(?: |$)(.*)')
 async def typewriter(typew):
 	message = typew.pattern_match.group(1)
-	await typew.edit("`Sedang Mencari Informasi Para Jomblo..`")
-	sleep(5)
+	await typew.edit("`Mau Gue Santet Lu Broo?..`")
+	sleep(4)
 	await typew.edit("0%")
-	number =+ 1
-	await typew.edit(str(number) + "%   Informasi Berhasil Didapatkan!!!")
+	number = 1
+	await typew.edit(str(number) + "%   ▎")
 	number = number+ 1
-	sleep(1)
-	await typew.edit(str(number) + "%   Proses Menyantet Target Yang Jomblo")
+	sleep(0.03)
+	await typew.edit(str(number) + "%   ▍")
 	number = number+ 1
-	sleep(1)
+	sleep(0.03)
+	await typew.edit(str(number) + "%   ▌")
+	number = number+ 1
+	sleep(0.03)
 	await typew.edit(str(number) + "%   ▊")
 	number = number+ 1
 	sleep(0.03)
@@ -309,9 +312,7 @@ async def typewriter(typew):
 	sleep(0.03)
 	await typew.edit(str(number) + "%   ████████████████▌")
 	sleep(1)
-	await typew.edit("Mampuss..")
-        sleep(1)
-	await typew.edit("Target Sudah Menjadi Joblo Abadi..:v")
+	await typew.edit("Tapi Boong......:v")
 	# I did it for two hours :D just ctrl+c - crtl+v
 
 
@@ -322,5 +323,5 @@ async def typewriter(typew):
 CMD_HELP.update({
     'fakeload':
     '.kill\
-        \nUsage: Waoooo.'
+        \nUsage: Gagal Santet.'
 })

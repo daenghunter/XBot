@@ -11,23 +11,17 @@ async def typewriter(typew):
 	message = typew.pattern_match.group(1)
 	await typew.edit("`Sedang Mencari Informasi Para Jomblo..`")
 	sleep(5)
-        await typew.edit("`.................`")
-	sleep(3)
-        await typew.edit("`Informasi Berhasil Didapatkan!!!`")
-	sleep(3)
-        await typew.edit("`Proses Menyantet Target Yang Jomblo`")
-	sleep(3)
 	await typew.edit("0%")
 	number = 1
-	await typew.edit(str(number) + "%   ▎")
+	await typew.edit(str(number) + "%   .................")
 	number = number+ 1
-	sleep(0.03)
-	await typew.edit(str(number) + "%   ▍")
+	sleep(1)
+	await typew.edit(str(number) + "%   Informasi Berhasil Didapatkan!!!")
 	number = number+ 1
-	sleep(0.03)
-	await typew.edit(str(number) + "%   ▌")
+	sleep(1)
+	await typew.edit(str(number) + "%   Proses Menyantet Target Yang Jomblo")
 	number = number+ 1
-	sleep(0.03)
+	sleep(1)
 	await typew.edit(str(number) + "%   ▊")
 	number = number+ 1
 	sleep(0.03)

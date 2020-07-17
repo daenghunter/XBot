@@ -12,10 +12,7 @@ async def typewriter(typew):
 	await typew.edit("`Sedang Mencari Informasi Para Jomblo..`")
 	sleep(5)
 	await typew.edit("0%")
-	number = 1
-	await typew.edit(str(number) + "%   .................")
-	number = number+ 1
-	sleep(1)
+	number =+ 1
 	await typew.edit(str(number) + "%   Informasi Berhasil Didapatkan!!!")
 	number = number+ 1
 	sleep(1)

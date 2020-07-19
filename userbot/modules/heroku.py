@@ -1,4 +1,3 @@
-# Copyright (C) 2020 Adek Maulana.
 # All rights reserved.
 """
    Heroku manager for your userbot
@@ -179,12 +178,12 @@ async def dyno_usage(dyno):
 
             await dyno.edit(
                  "**Dyno Usage**:\n\n"
-                 f"-> `Dyno usage for`  **{app.name}**:\n"
-                 f"     •  **{AppHours} hour(s), "
-                 f"{AppMinutes} minute(s)  -  {AppPercentage}%**"
+                 f"-> `Penggunaan Dyno Untuk`  **{app.name}**:\n"
+                 f"     •  **{AppHours} jam(s), "
+                 f"{AppMinutes} menit(s)  -  {AppPercentage}%**"
                  "\n\n"
-                 "-> `Dyno hours quota remaining this month`:\n"
-                 f"     •  **{hours} hour(s), {minutes} minute(s)  "
+                 "-> `Sisa Waktu Dyno Bulan Ini`:\n"
+                 f"     •  **{hours} jam(s), {minutes} menit(s)  "
                  f"-  {percentage}%**"
             )
             return True

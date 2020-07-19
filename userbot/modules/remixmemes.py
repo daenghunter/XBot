@@ -12,7 +12,7 @@ from telethon.errors.rpcerrorlist import MessageIdInvalidError
 from random import randint
 import random
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))

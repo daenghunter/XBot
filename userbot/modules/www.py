@@ -66,10 +66,10 @@ async def neardc(event):
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
-    await pong.edit("`gass!`")
+    await pong.edit("`Croottss!`")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit("`Status!\n%sms`" % (duration))
+    await pong.edit("`Gass!\n%sms`" % (duration))
 
 
 CMD_HELP.update({

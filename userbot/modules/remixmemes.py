@@ -12,6 +12,47 @@ from telethon.errors.rpcerrorlist import MessageIdInvalidError
 from random import randint
 import random
 
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
+
+
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+
+async def _(event):
+
+    if event.fwd_from:
+
+        return
+
+    animation_interval = 3
+
+    animation_ttl = range(0, 103)
+
+    input_str = event.pattern_match.group(1)
+
+    if input_str == "eye":
+
+        await event.edit(input_str)
+
+        animation_chars = [
+
+            "👁👁\n  👄  =====> Hey, How are you?",
+            "👁👁\n  👅  =====> Everything okay?",    
+            "👁👁\n  💋  =====> Why are you staring at this?",
+            "👁👁\n  👄  =====> You idiot",
+            "👁👁\n  👅  =====> Go away",    
+            "👁👁\n  💋  =====> Stop laughing",
+            "👁👁\n  👄  =====> It's not funny",
+            "👁👁\n  👅  =====> I guess ur still looking",    
+            "👁👁\n  💋  =====> Ok retard 😑",
+            "👁👁\n  👄  =====> I go away then"
+        ]
+
+        for i in animation_ttl:
+
+            await asyncio.sleep(animation_interval)
+
+            await event.edit(animation_chars[i % 103])
+
 
 @bot.on(events.NewMessage(pattern=r"\.bombs", outgoing=True))
 async def _(event):

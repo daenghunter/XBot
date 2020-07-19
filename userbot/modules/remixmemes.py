@@ -517,7 +517,7 @@ async def _(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
             "`Hacking... 100%\n█████████HACKED███████████ `",
-           f"`Targeted Account Hacked...\n\nPay 9999$ To @{name} or gib a pizza party 🍕 To Remove This Hack`"
+           f"`Targeted Account Hacked...\n\nPay 9999$ To User or gib a pizza party 🍕 To Remove This Hack`"
         ]
 
         for i in animation_ttl:
@@ -1336,13 +1336,13 @@ async def _(event):
             "`Connecting To Telegram Headquarters...`",
             "`Call Connected.`",
             "`Telegram: Hello This is Telegram HQ. Who is this?`",
-           f"`Me: Yo this is`@{name},`Please Connect me to my lil bro,Pavel Durov`",
+           f"`Me: Yo this is`User,`Please Connect me to my lil bro,Pavel Durov`",
             "`User Authorised.`",
             "`Calling Pavel Durov`  `At +916969696969`",
             "`Private  Call Connected...`",
             "`Me: Hello Sir, Please Ban This Telegram Account.`",    
             "`Pavel: May I Know Who Is This?`",
-           f"`Me: Yo Brah, I Am` @{name} ",
+           f"`Me: Yo Brah, I Am` User ",
             "`Pavel: OMG!!! Long time no see, Wassup Brother...\nI'll Make Sure That Guy Account Will Get Blocked Within 24Hrs.`",
             "`Me: Thanks, See You Later Brah.`",
             "`Pavel: Please Don't Thank Brah, Telegram Is Our's. Just Gimme A Call When You Become Free.`",

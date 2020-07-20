@@ -11,14 +11,9 @@ from time import sleep
 from os import execl
 import sys
 import io
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot, GIT_REPO_NAME, ALIVE_NAME
+from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.events import register
 from userbot.utils import time_formatter
-
-
-# ================= CONSTANT =================
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-# ============================================
 
 @register(outgoing=True, pattern="^\.random")
 async def randomise(items):

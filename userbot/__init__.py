@@ -75,6 +75,11 @@ ALIVE_LOGO = os.environ.get(
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
+# Send .chatid in any group with all your administration bots (added)
+G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", None)
+if G_BAN_LOGGER_GROUP:
+        G_BAN_LOGGER_GROUP = int(G_BAN_LOGGER_GROUP)
+
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)

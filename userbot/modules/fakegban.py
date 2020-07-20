@@ -9,7 +9,7 @@ from userbot.events import register
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot, ALIVE_NAME
 
 # ================= CONSTANT =================
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME
 # ============================================
 
 @register(outgoing=True, pattern="^.fgban(?: |$)(.*)")

@@ -6,7 +6,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 #from userbot.utils import admin_cmd
 from userbot.events import register 
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot,
+from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 
 @register(outgoing=True, pattern="^.fgban(?: |$)(.*)")
 async def gbun(event):

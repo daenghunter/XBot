@@ -6,12 +6,9 @@ Available Commands:
 from telethon import events
 import asyncio
 from userbot.events import register 
-from userbot import  CMD_HELP, bot, G_BAN_LOGGER_GROUP, ALIVE_NAME
+from userbot import  CMD_HELP, bot, G_BAN_LOGGER_GROUP
 #imported from uniborg by @heyworld
 
-# ================= CONSTANT =================
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-# ============================================
 
 @register(outgoing=True, pattern="^.gban(?: |$)(.*)")
 async def _(event):
@@ -34,7 +31,7 @@ async def _(event):
     await event.delete()
     await event.reply("**gbanning...**")
     asyncio.sleep(3.5)
-    await event.reply(f"**User gbanned by {DEFAULTUSER}**")
+    await event.reply(f"**User gbanned by {user.first_name}**")
 
 
 @register(outgoing=True, pattern="^.ungban(?: |$)(.*)")
@@ -55,7 +52,7 @@ async def _(event):
     await event.delete()
     await event.reply("**ungbanning...**")
     asyncio.sleep(3.5)
-    await event.reply(f"**User ungbanned by {DEFAULTUSER}**")
+    await event.reply(f"**User ungbanned by {user.first_name}**")
     
 CMD_HELP.update({
     "gban": "\

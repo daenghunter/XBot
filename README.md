@@ -1,4 +1,5 @@
 <p align="center"><img src="https://telegra.ph/file/adeb8fb9461ccb9b84319.jpg"</p>
+<p align="center"><img src="https://telegra.ph/file/d8f0d51e8e02430d5bc2c.jpg"</p>
 
 <h3 align="center">A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database.</h3>
 <h4 align="center">Based on RaphielGang's <a href="https://github.com/RaphielGang/Telegram-UserBot">Paperplane</a> Telegram userbot...</h4>

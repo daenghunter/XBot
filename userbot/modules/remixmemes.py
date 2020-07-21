@@ -517,7 +517,7 @@ async def _(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
             "`Hacking... 100%\n█████████HACKED███████████ `",
-           f"`×AKUN BERHASIL DIRETAS...!!!×\n\nBayar Rp.100K Jika Akun Ingin Kembali !!!!!!\n\n©XBot -{first_name}`"
+           f"`×AKUN BERHASIL DIRETAS..!!!×\n\nBayar Rp.100K Jika Akun Ingin Kembali !!!!!!\n\n©XBot - OFFICIAL`"
         ]
 
         for i in animation_ttl:

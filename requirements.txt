@@ -49,3 +49,4 @@ pyfiglet
 covid
 jikanpy
 pendulum==2.0.5
+html_telegraph_poster

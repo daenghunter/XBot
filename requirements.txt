@@ -73,6 +73,7 @@ telethon-session-sqlalchemy
 twitter_scraper
 TgCrypto>=1.2.0
 urbandict
+validators
 wikipedia
 wget
 wheel

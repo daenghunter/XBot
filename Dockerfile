@@ -65,7 +65,7 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone -b master https://github.com/xvenom15/XBot /home/XBot/
+RUN git clone -b master https://github.com/daenghunter/XBot /home/XBot/
 RUN mkdir /home/XBot/bin/
 WORKDIR /home/XBot/
 
